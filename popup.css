@@ -1,0 +1,13 @@
+/* popup.css */
+body {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #popup-content {
+    font-size: 14px;
+    font-weight: bold;
+  }
+ 

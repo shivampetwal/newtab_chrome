@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Wallpaper & Time",
+  "version": "1.0",
+  "description": "Displays random wallpapers and the current date/time.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "images/icon129.png"
+    }
+  },
+  "icons": {
+    "128": "images/icon129.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "https://api.unsplash.com/photos/random?client_id=ORclfsYGXZrNFishTkGC7HVrjC_Fe1iPTfn484yBsUs&query=nature%20landscape"
+  ],
+  "background": {
+    "service_worker": "background.js" // Add this line
+  }
+}
